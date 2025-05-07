@@ -1,0 +1,115 @@
+<!-- certificates.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📜 My Certificates</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: #e0f2fe;
+    }
+
+    .cert-page {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 2.8em;
+      background: linear-gradient(to right, #facc15, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5e1;
+      margin-bottom: 40px;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .cert-card {
+      background: #1e293b;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .cert-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    }
+
+    .cert-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .cert-caption {
+      padding: 10px 15px;
+      background: #0f172a;
+      color: #fbbf24;
+      font-size: 1em;
+      font-weight: 500;
+    }
+
+    .back-link {
+      margin-top: 40px;
+      display: inline-block;
+      color: #93c5fd;
+      text-decoration: none;
+      font-size: 1em;
+    }
+
+    .back-link:hover {
+      color: #60a5fa;
+    }
+  </style>
+</head>
+<body>
+  <div class="cert-page">
+    <h1>📜 My Certificates</h1>
+    <p>Proof that effort and belief turn into achievement. Here's a collection of what I've earned along the way.</p>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <img src="1.jpg" alt="Certificate 1">
+        <div class="cert-caption"></div>
+      </div>
+      <div class="cert-card">
+        <img src="2.jpg" alt="Certificate 2">
+        <div class="cert-caption"></div>
+      </div>
+      <div class="cert-card">
+        <img src="3.jpg" alt="Certificate 3">
+        <div class="cert-caption"></div>
+      </div>
+      <div class="cert-card">
+        <img src="4.jpg" alt="Certificate 4">
+        <div class="cert-caption"></div>
+      </div>
+      <!-- Add more cert-card blocks as needed -->
+    </div>
+
+    <a href="home.html" class="back-link">⬅️ Back to Time Capsule</a>
+  </div>
+</body>
+</html>

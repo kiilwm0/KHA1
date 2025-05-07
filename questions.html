@@ -1,0 +1,118 @@
+<!-- questions.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questions for My Future Self</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #1a202c, #2d3748);
+      color: #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin: 50px 20px 20px;
+      font-size: 2.8em;
+      background: linear-gradient(90deg, #7f5af0, #00c6ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+
+    .intro {
+      max-width: 700px;
+      text-align: center;
+      font-size: 1.1em;
+      color: #94a3b8;
+      margin-bottom: 30px;
+      padding: 0 20px;
+    }
+
+    .questions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      width: 90%;
+      max-width: 1100px;
+    }
+
+    .question-card {
+      background: linear-gradient(145deg, #2c2f4a, #1a1d2d);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      font-size: 1.1em;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .question-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .question-card::after {
+      content: '🧠';
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-size: 1.3em;
+      opacity: 0.3;
+    }
+
+    .footer-note {
+      margin: 40px 20px 20px;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.95em;
+    }
+
+    .back-link {
+      margin-bottom: 40px;
+      text-decoration: none;
+      font-size: 1em;
+      color: #7f5af0;
+      transition: color 0.3s;
+    }
+
+    .back-link:hover {
+      color: #c084fc;
+    }
+  </style>
+</head>
+<body>
+  <h1>💭 Questions for My Future Self</h1>
+  <div class="intro">
+    These questions are here for you, future me. Click each one in your mind, and reflect. Who did I become?
+  </div>
+  <div class="questions-grid">
+    <div class="question-card">Did I become the person I hoped to be?</div>
+    <div class="question-card">What dreams have I followed... or forgotten?</div>
+    <div class="question-card">Who stayed in my life, and who left?</div>
+    <div class="question-card">What was my proudest moment?</div>
+    <div class="question-card">Did I take the risks I needed to grow?</div>
+    <div class="question-card">What’s something I’m still waiting to do?</div>
+    <div class="question-card">Do I still smile the same way?</div>
+    <div class="question-card">How have I shown kindness to others?</div>
+    <div class="question-card">Is my mom proud?</div>
+    <div class="question-card">What would I thank my younger self for?</div>
+  </div>
+  <div class="footer-note">
+    It’s okay if the answers aren’t clear. What matters is that you keep asking. 🌠
+  </div>
+  <a href="index.html" class="back-link">⬅️ Back to Time Capsule</a>
+</body>
+</html>
